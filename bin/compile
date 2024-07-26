@@ -54,4 +54,4 @@ mkdir -p $build_dir/logs
 
 find -maxdepth 1 ! -name Procfile ! -name .profile.d ! -name .apt ! -name .dotnet ! -name .heroku ! -name node_modules ! -name bin ! -name config ! -name Release ! -name Static.json -exec rm -rv {} \; > /dev/null 2>&1;
 
-echo "${ls}"
+echo "$(ls)"
